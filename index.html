@@ -167,6 +167,46 @@ footer{padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute)
   .stack{padding:6px 18px 26px}
   .btn{padding:16px 22px 14px;font-size:18px;width:100%}
 }
+
+/* Josh's replay page, section for section */
+.kicker2{font:500 15px/1.4 Poppins;color:var(--mute);margin:-12px 0 18px;font-style:italic}
+.btn .anchor-in{display:block;margin-top:6px;font:400 13.5px/1.3 Poppins;opacity:.92}
+.stack-title{text-align:center;font-size:clamp(30px,4vw,48px);font-weight:500;max-width:760px;margin:0 auto 34px}
+.stack-title em{font-style:normal;color:var(--red)}
+.card{max-width:880px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px 34px 36px;box-shadow:0 30px 60px -44px rgba(61,11,23,.5)}
+.card .secure{text-align:center;font-size:13px;color:var(--mute);margin:0 0 14px}
+.card .bundle{border-radius:16px;margin:0 auto 26px}
+.chk{margin:0 0 20px}
+.chk h3{font:700 16.5px/1.4 Poppins;letter-spacing:0;color:var(--ink);margin:0 0 4px}
+.chk h3:before{content:"✅";margin-right:8px}
+.chk h3 .k{color:var(--red)}
+.chk p{font-size:15px;line-height:1.6;margin:0;color:var(--ink)}
+.chk p b{font-weight:600}
+.chk .only{display:inline-block;margin-left:6px;font-size:11.5px;font-weight:600;color:#fff;background:var(--red);border-radius:20px;padding:2px 9px;vertical-align:2px}
+.totals{text-align:center;padding-top:10px}
+.totals .tv{font:700 30px/1.2 Poppins;margin:0}
+.totals .tv s{text-decoration-thickness:3px}
+.totals .np{font:700 28px/1.2 Poppins;color:var(--rose);margin:4px 0}
+.totals .today{font:800 clamp(36px,5.6vw,50px)/1.15 Poppins;color:var(--red);text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:8px;margin:4px 0 26px}
+.totals .fine{font-size:13.5px;color:var(--mute);margin-top:14px}
+.wall{background:linear-gradient(180deg,#3a0f19,#2b0b13);padding:80px 0}
+.wall-grid{columns:2;column-gap:56px;max-width:900px;margin:0 auto}
+.t{break-inside:avoid;margin:0 0 50px;text-align:center}
+.t q{display:block;font:600 19px/1.45 Poppins;color:#fff;quotes:"“" "”";margin:0 auto 18px;max-width:380px}
+.cm{background:#fff;border-radius:12px;padding:14px 16px;text-align:left;max-width:380px;margin:0 auto;box-shadow:0 20px 40px -20px rgba(0,0,0,.6)}
+.cm-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.cm-av{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#d9a3ab,#8e1f30);filter:blur(3px)}
+.cm-name{height:10px;width:110px;border-radius:6px;background:#d8d2d3;filter:blur(2px)}
+.cm-time{font-size:11px;color:#8a8a8a;margin-left:auto}
+.cm p{font:400 14px/1.5 Roboto,Arial,sans-serif;color:#0f0f0f;margin:0 0 8px}
+.cm-act{display:flex;gap:16px;font:500 12px/1 Arial,sans-serif;color:#606060;align-items:center}
+.t .who{display:block;margin-top:12px;font-size:13px;color:#f1c9cf}
+.faq-title{text-align:center;font-size:clamp(30px,4vw,46px);font-weight:500;text-transform:uppercase;letter-spacing:.02em;margin:0 0 40px}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:980px;margin:0 auto;align-items:start}
+.faq-grid details{margin:0;padding:10px 24px;border-radius:12px;box-shadow:0 10px 30px -20px rgba(61,11,23,.35)}
+.faq-grid summary{font:600 15px/1.45 Poppins;letter-spacing:.02em}
+.end{text-align:center;padding:10px 0 70px}
+@media (max-width:760px){.wall-grid{columns:1}.faq-grid{grid-template-columns:1fr}.card{padding:16px 18px 28px}.totals .tv{font-size:24px}.totals .np{font-size:22px}}
 </style>
 </head>
 <body>
@@ -176,10 +216,11 @@ footer{padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute)
 <header class="hero">
   <div class="wrap hero-in">
     <p class="kicker"><span class="long">From Survival to Softness™ <i>·</i> </span>8-week program <i>·</i> Starts Saturday 21 November</p>
+    <p class="kicker2">FAQ included below</p>
     <h1>Stop Living In Survival Mode: The 4-Stage Method That Helps You <em>Switch Off</em>, Put Yourself First &amp; Feel Soft And Feminine In Just 8 Weeks</h1>
     <p class="lead">…without giving up your ambition, your goals or the people who count on you.</p>
 
-    <!-- VSL slot: replace .vsl-poster with the 5-minute video embed when it's recorded (keep the 16:9 frame). -->
+    <!-- VSL slot: replace .vsl with the 5-minute video embed when it's recorded (keep the 16:9 frame). -->
     <div class="vsl" role="img" aria-label="Video from Urania, coming soon">
       <img class="vsl-fg" src="img/host.jpg" alt="Urania Nelom in a white dress with white flowers">
       <div class="vsl-copy">
@@ -189,199 +230,95 @@ footer{padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute)
       </div>
     </div>
 
-    <a class="btn big" href="#join">Yes, I'm ready to join<small>We start together on Saturday 21 November</small></a>
-    <p class="anchor">Normally <s>$997</s> · <b>yours today for $697</b></p>
-    <div class="trust">
-      <span><b>156K</b> YouTube community</span>
-      <span><b>1M+</b> views on my meditations</span>
-      <span><b>Since 2020</b> coaching women</span>
-    </div>
+    <a class="btn big" href="#join">Claim My Spot Now<span class="anchor-in">Normally $997 · Yours for $697</span></a>
   </div>
 </header>
 
-<section class="alt">
-  <div class="wrap">
-    <div class="center"><span class="eyebrow">Does this sound like you?</span></div>
-    <h2 class="sec-title">The hidden reason you can't switch off, even when everything is done</h2>
-    <p class="sec-sub">Survival mode doesn't look like chaos. It looks like a woman who is on top of everything. Maybe you've said some of these:</p>
-    <div class="cols2 narrow" style="max-width:900px">
-      <div class="quote-card">I have so much on my mind, and I struggle to switch off.</div>
-      <div class="quote-card">I feel guilty when I'm resting or not being productive.</div>
-      <div class="quote-card">I know I need more time for myself, but there's always something else to do.</div>
-      <div class="quote-card">I'm constantly thinking about what needs to happen next.</div>
-      <div class="quote-card">I'm good at taking care of my responsibilities, but I struggle to put myself first.</div>
-      <div class="quote-card">I want to feel connected to myself again, and know what I actually want.</div>
-    </div>
-    <p class="turn">You don't need to become better at doing everything. <b>You need a life that has room for you.</b> That's exactly what we build together in these 8 weeks.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap story">
-    <div class="story-photo"><img src="img/soft.jpg" alt="Urania Nelom smiling, resting her chin on her hand"></div>
-    <div>
-      <span class="eyebrow">Hi, I'm Urania</span>
-      <h2>I looked like I had everything under control, and inside I never felt safe to rest</h2>
-      <p>When I was five, my father left our family, and as a little girl I stepped into survival. People always said, "Oh, Urania, she has everything under control," but inside there was always this rush in my body, and I thought that was normal.</p>
-      <p>Then came the burnout. What finally changed my life was learning to feel safe in my own body first, and building a life with room for me in it. Today I teach this to 156,000 women on YouTube, I coach women in my program, and I still fly as a flight attendant, so I know what a full week feels like.</p>
-      <div class="stats">
-        <div><b>156K</b><span>women in my YouTube community</span></div>
-        <div><b>1M+</b><span>views on my meditations</span></div>
-        <div><b>2020</b><span>coaching women since</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <div class="center"><span class="eyebrow">The program</span></div>
-    <h2 class="sec-title">The 4 stages that take you from survival to softness</h2>
-    <p class="sec-sub">Two modules for each stage. The lessons give you the foundation, and the live sessions help you put it into your real life.</p>
-    <div class="stages">
-      <div class="stage"><div class="n">Stage 1</div><h3>Reconnect</h3><div class="w">Modules 1–2</div><p>Come back into your body. Breathwork, emotional awareness, EFT tapping and your Soft Morning Routine.</p></div>
-      <div class="stage"><div class="n">Stage 2</div><h3>Create</h3><div class="w">Modules 3–4</div><p>Make space for yourself. The Soft Planning Method, a realistic weekly schedule and boundaries you can actually say out loud.</p></div>
-      <div class="stage"><div class="n">Stage 3</div><h3>Nourish</h3><div class="w">Modules 5–6</div><p>Put your needs back on the list. Pleasure, rest, real me-time and an evening routine that helps you unwind.</p></div>
-      <div class="stage"><div class="n">Stage 4</div><h3>Embody</h3><div class="w">Modules 7–8</div><p>Make softness your normal. Habits without pressure, your Soft Sunday Reset and a plan for busy weeks.</p></div>
-    </div>
-    <div class="blueprint">
-      <h3>You finish with your own Soft Life Blueprint</h3>
-      <ul>
-        <li>Your Soft Morning Routine</li>
-        <li>Your emotional self-connection practices</li>
-        <li>Your Soft Weekly Structure</li>
-        <li>Your personal boundaries</li>
-        <li>Your me-time and pleasure practices</li>
-        <li>Your feminine wellness practices</li>
-        <li>Your Soft Sunday Reset</li>
-        <li>Your plan for busy, demanding weeks</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <section id="join">
   <div class="wrap">
-    <div class="center"><span class="eyebrow">Everything you get</span></div>
-    <h2 class="sec-title">Here's everything inside From Survival to Softness™</h2>
-    <p class="sec-sub">Normally $997. Today you join for $697.</p>
+    <h2 class="stack-title">Here's Everything You Get With <em>From Survival to Softness™</em></h2>
+    <div class="card">
+      <p class="secure">Secure your spot today</p>
+      <img class="bundle" src="img/bundle.jpg" alt="The program, audio library, journal, workbooks and guides">
 
-    <div class="stack">
-      <div class="item">
-        <div class="thumb"><img src="img/bonus-program.jpg" alt=""></div>
-        <div><h3><span class="k">THE PROGRAM:</span> From Survival to Softness™, the 8-week program</h3><p>8 modules across the 4 stages, 6 live group coaching sessions with me, and your personal Soft Life Blueprint. Every session is recorded, so you never fall behind.</p><span class="val">$2,997 value</span></div>
-      </div>
-      <div class="item">
-        <div class="thumb"><img src="img/bonus-oneone.jpg" alt=""></div>
-        <div><h3><span class="k">BONUS #1:</span> A 45-minute 1:1 session with me</h3><p>Just you and me. We look at where you are right now, what keeps you on hard mode and how to shape your Soft Life Blueprint around your real life.</p><span class="val">$397 value</span></div>
-      </div>
-      <div class="item">
-        <div class="thumb"><img src="img/bonus-pocket.jpg" alt=""></div>
-        <div><h3><span class="k">BONUS #2:</span> Pocket Urania <span class="only">First 7 women only</span></h3><p>8 weeks of voice-note access to me between the live sessions. When something comes up on a Tuesday, you don't have to wait for the next call.</p><span class="val">$1,500 value</span></div>
-      </div>
-      <div class="item">
-        <div class="thumb"><img src="img/bonus-audio.jpg" alt=""></div>
-        <div><h3><span class="k">BONUS #3:</span> The Soft Life Audio Library</h3><p>New feminine energy affirmations for each stage, morning and evening, plus 4 guided hypnosis sessions to listen to before sleep. My guided meditations have over 1 million views on YouTube, and these are made only for this program.</p><span class="val">$497 value</span></div>
-      </div>
-      <div class="item">
-        <div class="thumb"><img src="img/bonus-dating.jpg" alt=""></div>
-        <div><h3><span class="k">BONUS #4:</span> Soft &amp; Magnetic: feminine energy in dating</h3><p>How to stop chasing, set standards without being hard, and let yourself receive. For the woman who is single, dating or wants more softness in her relationship.</p><span class="val">$297 value</span></div>
-      </div>
-      <div class="item">
-        <div class="thumb"><img src="img/bonus-newyear.jpg" alt=""></div>
-        <div><h3><span class="k">BONUS #5:</span> Your Soft New Year</h3><p>A guided reflection on the year you just had, and my live Feminine Goal Setting Workshop, so you start 2027 with goals that feel good, not just look good.</p><span class="val">$297 value</span></div>
-      </div>
-      <div class="item">
-        <div class="thumb"><img src="img/bonus-calendar.jpg" alt=""></div>
-        <div><h3><span class="k">BONUS #6:</span> The Soft Calendar Method</h3><p>I show you my own Google Calendar and how I plan my week with soft structure: deep work, walks, me-time and rest, all with room to breathe.</p><span class="val">$47 value</span></div>
-      </div>
-      <div class="item">
-        <div class="thumb"><img src="img/bonus-hardweek.jpg" alt=""></div>
-        <div><h3><span class="k">BONUS #7:</span> The Hard Week Protocol</h3><p>The 10-minute version of every routine, for the weeks when life gets loud, so one busy week never undoes everything you built.</p><span class="val">$97 value</span></div>
-      </div>
-      <div class="item">
-        <div class="thumb"><img src="img/bonus-journal.jpg" alt=""></div>
-        <div><h3><span class="k">BONUS #8:</span> The Soft Life Journal</h3><p>56 prompts, one for every day of the 8 weeks, following the 4 stages.</p><span class="val">$47 value</span></div>
-      </div>
-      <div class="item">
-        <div class="thumb"><img src="img/bonus-circle.jpg" alt=""></div>
-        <div><h3><span class="k">INCLUDED:</span> The Soft Circle + lifetime access</h3><p>A private group with the other women in the program, and every lesson and recording for life.</p></div>
-      </div>
+      <div class="chk"><h3><span class="k">The 8-Week From Survival to Softness™ Program</span></h3><p>My signature program, where I take you through the 4 stages step by step: <b>Reconnect</b> (come back into your body with breathwork, EFT tapping and your Soft Morning Routine), <b>Create</b> (make space for yourself with the Soft Planning Method, a realistic weekly schedule and boundaries you can say out loud), <b>Nourish</b> (pleasure, rest, real me-time and an evening routine that helps you unwind) and <b>Embody</b> (habits without pressure, your Soft Sunday Reset and a plan for busy weeks). 8 modules, 6 live group coaching sessions with me, and you finish with your own Soft Life Blueprint. ($2,997 Value)</p></div>
 
-      <div class="price">
-        <p class="tv">Total value <s>$6,176</s></p>
-        <p class="np">Normal price: <s>$997</s></p>
-        <p class="today">Today only $697</p>
-        <a class="btn wide" href="#checkout">Yes, I'm ready to join<small>One payment of $697 · secure checkout</small></a>
+      <div class="chk"><h3><span class="k">BONUS #1:</span> A 45-Minute 1:1 Session With Me</h3><p>Just you and me. We look at where you are right now, what keeps you on hard mode and how to shape your Soft Life Blueprint around your real life. ($397 Value)</p></div>
+
+      <div class="chk"><h3><span class="k">BONUS #2:</span> Pocket Urania <span class="only">First 7 women only</span></h3><p>8 weeks of voice-note access to me between the live sessions. When something comes up on a Tuesday, you don't have to wait for the next call. ($1,500 Value)</p></div>
+
+      <div class="chk"><h3><span class="k">BONUS #3:</span> The Soft Life Audio Library</h3><p>New feminine energy affirmations for each stage, morning and evening, plus 4 guided hypnosis sessions to listen to before sleep. My guided meditations have over 1 million views on YouTube, and these are made only for this program. ($497 Value)</p></div>
+
+      <div class="chk"><h3><span class="k">BONUS #4:</span> Soft &amp; Magnetic: Feminine Energy In Dating</h3><p>How to stop chasing, set standards without being hard, and let yourself receive. For the woman who is single, dating or wants more softness in her relationship. ($297 Value)</p></div>
+
+      <div class="chk"><h3><span class="k">BONUS #5:</span> Your Soft New Year</h3><p>A guided reflection on the year you just had, and my live Feminine Goal Setting Workshop, so you start 2027 with goals that feel good, not just look good. ($297 Value)</p></div>
+
+      <div class="chk"><h3><span class="k">BONUS #6:</span> The Soft Calendar Method</h3><p>I show you my own Google Calendar and how I plan my week with soft structure: deep work, walks, me-time and rest, all with room to breathe. ($47 Value)</p></div>
+
+      <div class="chk"><h3><span class="k">BONUS #7:</span> The Hard Week Protocol</h3><p>The 10-minute version of every routine, for the weeks when life gets loud, so one busy week never undoes everything you built. ($97 Value)</p></div>
+
+      <div class="chk"><h3><span class="k">BONUS #8:</span> The Soft Life Journal</h3><p>56 prompts, one for every day of the 8 weeks, following the 4 stages. ($47 Value)</p></div>
+
+      <div class="chk"><h3><span class="k">YOU ALSO GET:</span> The Soft Circle Community (Lifetime Access)</h3><p>Doing this alone is how most of us ended up in survival mode. When you join, you also get a place in the Soft Circle, my private community where you connect with the other women in the program, plus every lesson and recording for life.</p></div>
+
+      <div class="totals">
+        <p class="tv">Total Value <s>$6,176</s></p>
+        <p class="np">Normal Price: $997</p>
+        <p class="today">ONLY $697 TODAY</p>
+        <a class="btn wide" href="#checkout">CLAIM MY SPOT NOW<span class="anchor-in">One payment · secure checkout</span></a>
         <p class="fine">Pocket Urania goes to the first 7 women who join.</p>
         <div class="dates">
           <div><span>Doors close</span><b>Wed 18 Nov</b></div>
           <div><span>We start</span><b>Sat 21 Nov</b></div>
           <div><span>Program ends</span><b>Sat 16 Jan</b></div>
         </div>
-        <p class="fine">After you join, you get a welcome email with everything you need, and we begin together on Saturday 21 November.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="alt">
-  <div class="wrap">
-    <div class="center"><span class="eyebrow">From my community</span></div>
-    <h2 class="sec-title">What women in my community are saying</h2>
-    <div class="proof">
-      <div class="yt"><p>"Your videos are so beneficial to helping me get out of survival mode and truly helping me embrace softness."</p><span>— A woman in my community</span></div>
-      <div class="yt"><p>"Wow you just literally spoke to my everyday. Being a mother, a business woman, I never switch off. I hardly sleep."</p><span>— A woman in my community</span></div>
-      <div class="yt"><p>"You are absolutely spot on! I am a combination of all of them. I'm learning to be different and set boundaries and reparent myself."</p><span>— A woman in my community</span></div>
-      <div class="yt"><p>"At 55 I begin to live in balance… love you Urania and all the women in this community."</p><span>— A woman in my community</span></div>
-      <div class="yt"><p>"I'm so happy to be healed and in my feminine. I make a quiet decision every day to stay soft and gentle."</p><span>— A woman in my community</span></div>
-      <div class="yt"><p>"Thank you so much Urania. You have been such a light on my journey."</p><span>— A woman in my community</span></div>
-    </div>
+<section class="wall">
+  <div class="wrap wall-grid">
+      <div class="t"><q>Your videos are so beneficial to helping me get out of survival mode and truly helping me embrace softness.</q>
+        <div class="cm"><div class="cm-top"><span class="cm-av"></span><span class="cm-name"></span></div><p>Your videos are so beneficial to helping me get out of survival mode and truly helping me embrace softness.</p><div class="cm-act"><span>👍</span><span>👎</span><span>Reply</span></div></div>
+        <span class="who">— A woman in my community</span></div>
+      <div class="t"><q>I never switch off. I hardly sleep.</q>
+        <div class="cm"><div class="cm-top"><span class="cm-av"></span><span class="cm-name"></span></div><p>2:53 wow you just literally spoke to my everyday. Being a mother a business woman, I never switch off. I hardly sleep</p><div class="cm-act"><span>👍</span><span>👎</span><span>Reply</span></div></div>
+        <span class="who">— A woman in my community</span></div>
+      <div class="t"><q>At 55 I begin to live in balance.</q>
+        <div class="cm"><div class="cm-top"><span class="cm-av"></span><span class="cm-name"></span></div><p>I am the oldest daughter of a narcissistic mother and an absent father... I recognise the 3 archetypes in me...at 55 I begin to live in balance...love you urania and all the women in this community</p><div class="cm-act"><span>👍 13</span><span>👎</span><span>Reply</span></div></div>
+        <span class="who">— A woman in my community</span></div>
+      <div class="t"><q>I make a quiet decision every day to stay soft and gentle.</q>
+        <div class="cm"><div class="cm-top"><span class="cm-av"></span><span class="cm-name"></span></div><p>I'm so happy to be healed and in my feminine. I make a quiet decision every day to stay soft and gentle.</p><div class="cm-act"><span>👍</span><span>👎</span><span>Reply</span></div></div>
+        <span class="who">— A woman in my community</span></div>
+      <div class="t"><q>I'm learning to be different and set boundaries and reparent myself.</q>
+        <div class="cm"><div class="cm-top"><span class="cm-av"></span><span class="cm-name"></span></div><p>You are absolutely spot on! I am a combination of all of them. I'm learning to be different and set boundaries and reparent myself. Thanks for this</p><div class="cm-act"><span>👍</span><span>👎</span><span>Reply</span></div></div>
+        <span class="who">— A woman in my community</span></div>
+      <div class="t"><q>You have been such a light on my journey.</q>
+        <div class="cm"><div class="cm-top"><span class="cm-av"></span><span class="cm-name"></span></div><p>Thank you so much Urania. You have been such a light on my journey.</p><div class="cm-act"><span>👍</span><span>👎</span><span>Reply</span></div></div>
+        <span class="who">— A woman in my community</span></div>
   </div>
 </section>
 
 <section>
-  <div class="narrow" style="max-width:960px">
-    <div class="fit">
-      <div><h3>This is for you if…</h3><ul>
-        <li>You're the one who holds everything together, and you're tired of it costing you yourself.</li>
-        <li>You feel guilty when you rest.</li>
-        <li>You want to keep your ambition, just without the constant rush.</li>
-        <li>You want practical tools, not only inspiration.</li>
-        <li>You're ready to give yourself 8 weeks.</li>
-      </ul></div>
-      <div><h3>This isn't for you if…</h3><ul>
-        <li>You want someone to tell you to do less and drop your goals.</li>
-        <li>You're looking for a quick fix you watch once and forget.</li>
-        <li>You're not willing to make space for yourself, even a little.</li>
-      </ul></div>
+  <div class="wrap">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      <details open><summary>When does it start, and how long does it take?</summary><p>The program starts on Saturday 21 November, not on the day you join, and runs for 8 weeks until Saturday 16 January. After you join you get a welcome email with everything you need before we start. Each week you get the lessons for that stage, and we meet live 6 times. Plan for about 1 to 2 hours a week.</p></details>
+      <details><summary>What if I can't make a live session?</summary><p>Every session is recorded and you keep lifetime access, so you can watch it when it suits you. You can also send me your question beforehand.</p></details>
+      <details><summary>Is this group coaching or private coaching?</summary><p>Both. The live sessions are with a small group of women, and every woman who joins also gets a 45-minute 1:1 session with me. The first 7 women also get Pocket Urania, my voice-note support between sessions.</p></details>
+      <details><summary>I'm already so busy. How will I find the time?</summary><p>That's exactly who this program is for. Nothing here asks you to add more to your plate. We start by making space, and the Hard Week Protocol gives you a 10-minute version of everything for the weeks when life gets loud.</p></details>
+      <details><summary>What if I don't have the budget right now?</summary><p>I understand. I spent years trying to fix my exhaustion with one self-care routine after another, and nothing changed until I learned to feel safe in my own body. Today the program is $697 instead of $997, and that price is only for this round.</p></details>
+      <details><summary>I already watch your videos. Why join the program?</summary><p>Videos give you ideas, and the program gives you your own plan. Inside, you build your personal Soft Life Blueprint step by step, you get live coaching, a 1:1 session with me and support between sessions, so it doesn't stay a nice idea you forget by Monday.</p></details>
+      <details><summary>Is this only about feminine energy?</summary><p>No. Feminine energy is part of it, but this is also very practical: your morning, your week, your boundaries and your calendar. The inner work helps you know what you need, and the practical work makes room for it.</p></details>
+      <details><summary>I'm not sure it's right for me. Can I talk to you first?</summary><p>Yes. Book a free call with me below and we'll see together whether it fits.</p></details>
     </div>
   </div>
 </section>
 
-<section class="alt">
-  <div class="narrow">
-    <div class="center"><span class="eyebrow">Questions</span></div>
-    <h2 class="sec-title">Frequently asked questions</h2>
-    <details open><summary>When does it start, and how long does it take?</summary><p>The program starts on Saturday 21 November, not on the day you join, and runs for 8 weeks until Saturday 16 January. After you join you get a welcome email with everything you need before we start. Each week you get the lessons for that stage, and we meet live 6 times. Plan for about 1 to 2 hours a week.</p></details>
-    <details><summary>What if I can't make a live session?</summary><p>Every session is recorded and you keep lifetime access, so you can watch it when it suits you. You can also send me your question beforehand.</p></details>
-    <details><summary>Is this group coaching or private coaching?</summary><p>Both. The live sessions are with a small group of women, and every woman who joins also gets a 45-minute 1:1 session with me. The first 7 women also get Pocket Urania, my voice-note support between sessions.</p></details>
-    <details><summary>I'm already so busy. How will I find the time?</summary><p>That's exactly who this program is for. Nothing here asks you to add more to your plate. We start by making space, and the Hard Week Protocol gives you a 10-minute version of everything for the weeks when life gets loud.</p></details>
-    <details><summary>What if I don't have the budget right now?</summary><p>I understand. I spent years trying to fix my exhaustion with one self-care routine after another, and nothing changed until I learned to feel safe in my own body. Today the program is $697 instead of $997, and that price is only for this round.</p></details>
-    <details><summary>I already watch your videos. Why join the program?</summary><p>Videos give you ideas, and the program gives you your own plan. Inside, you build your personal Soft Life Blueprint step by step, you get live coaching, a 1:1 session with me and support between sessions, so it doesn't stay a nice idea you forget by Monday.</p></details>
-    <details><summary>Is this only about feminine energy?</summary><p>No. Feminine energy is part of it, but this is also very practical: your morning, your week, your boundaries and your calendar. The inner work helps you know what you need, and the practical work makes room for it.</p></details>
-    <details><summary>I'm not sure it's right for me. Can I talk to you first?</summary><p>Yes. Book a free call with me below and we'll see together whether it fits.</p></details>
-  </div>
-</section>
-
-<section class="final">
-  <div class="wrap">
-    <span class="eyebrow">Doors close Wednesday 18 November</span>
-    <h2 style="margin-top:14px">You were never meant to do life on hard mode</h2>
-    <p class="sec-sub" style="margin-bottom:28px">Join From Survival to Softness™ today for $697, and let's build a life that has room for you.</p>
-    <a class="btn" href="#checkout">Yes, I'm ready to join<small>Today $697 · normally $997</small></a>
-    <p class="call">Not sure it's for you? <a href="https://calendly.com/coachurania/survial-to-softness-clarity-call">Book a free call with me</a></p>
-  </div>
+<section class="end">
+  <a class="btn" href="#checkout">CLAIM MY SPOT NOW<span class="anchor-in">Today $697 · normally $997 · starts Sat 21 Nov</span></a>
+  <p class="call">Not sure it's for you? <a href="https://calendly.com/coachurania/survial-to-softness-clarity-call">Book a free call with me</a></p>
 </section>
 
 <footer>© 2026 Urania Nelom · From Survival to Softness™</footer>
