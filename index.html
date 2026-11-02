@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>From Survival to Softness™ · Urania Nelom</title>
+<meta name="description" content="An 8-week program with Urania Nelom. Live coaching, a 1:1 session with her and your own Soft Life Blueprint. Starts 21 November.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Shippori+Mincho:wght@500;600;700&display=swap">
+<style>
+/* Urania's look (same system as her live class page): near-white bg, Poppins body, Shippori Mincho headings, deep red only on buttons, bar and prices. Layout follows Josh Macin's replay offer page: promise, button, value stack, three-line price block, proof, FAQ, button again. */
+:root{
+  --bg:#fffaf9; --blush:#fbeeee; --card:#ffffff;
+  --red:#8e1f30; --red2:#6f1424; --rose:#c76b78; --rose-soft:#f6dcdf;
+  --ink:#2b1218; --mute:#6f5a5e; --line:rgba(43,18,24,.1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Poppins,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--red)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.narrow{max-width:760px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.alt{background:var(--blush)}
+h1,h2,h3{font-family:"Shippori Mincho",Georgia,serif;color:var(--ink);margin:0;line-height:1.18;letter-spacing:-.03em;text-wrap:balance}
+p{margin:0 0 14px}
+
+.bar{background:linear-gradient(180deg,var(--red),var(--red2));color:#fff;text-align:center;padding:11px 16px;font:500 14px/1.4 Poppins}
+.bar b{font-weight:600}
+
+.eyebrow{display:inline-block;background:var(--rose-soft);color:var(--red);border-radius:40px;padding:7px 18px;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.sec-title{text-align:center;font-size:clamp(28px,3.6vw,44px);font-weight:500;max-width:820px;margin:14px auto 18px}
+.sec-sub{text-align:center;color:var(--mute);max-width:680px;margin:0 auto 40px;font-size:18px}
+.center{text-align:center}
+
+/* hero: centered like Josh's replay page, the video is the centre of the screen */
+.hero{padding:44px 0 56px;background:radial-gradient(1200px 520px at 50% -10%,#fbe7ea 0%,rgba(251,231,234,0) 70%)}
+.hero-in{text-align:center;max-width:980px}
+.kicker{font:500 13px/1.4 Poppins;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin:0 0 18px}
+.kicker i{font-style:normal;color:var(--rose);margin:0 6px}
+.hero h1{font-family:"Shippori Mincho",Georgia,serif;font-weight:500;font-size:clamp(30px,4.3vw,52px);line-height:1.12;letter-spacing:-.035em;margin:0 auto 16px;max-width:960px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.lead{font:300 clamp(17px,1.6vw,20px)/1.5 Poppins;letter-spacing:.02em;color:var(--mute);max-width:640px;margin:0 auto 30px}
+.vsl{position:relative;aspect-ratio:16/9;max-width:860px;margin:0 auto 30px;border-radius:22px;overflow:hidden;background:linear-gradient(115deg,#2b1218 0%,#5c1a29 48%,#8e1f30 100%);box-shadow:0 40px 80px -40px rgba(61,11,23,.6),0 0 0 1px rgba(43,18,24,.08)}
+.vsl-bg{position:absolute;inset:-30px;width:calc(100% + 60px);height:calc(100% + 60px);object-fit:cover;filter:blur(26px) brightness(.62) saturate(1.1)}
+.vsl-fg{position:absolute;right:0;top:0;height:100%;width:58%;object-fit:cover;object-position:50% 30%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%);mask-image:linear-gradient(90deg,transparent 0,#000 34%)}
+.vsl-copy{position:absolute;left:7%;top:50%;transform:translateY(-50%);text-align:left;color:#fff;max-width:42%;display:flex;flex-direction:column;align-items:flex-start}
+.vsl-label{display:inline-block;font:600 11.5px/1 Poppins;letter-spacing:.16em;text-transform:uppercase;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:30px;padding:8px 14px}
+.vsl-copy p{font:500 clamp(18px,2.4vw,30px)/1.2 "Shippori Mincho",serif;margin:14px 0 0;letter-spacing:-.01em}
+.play{position:relative;margin-top:22px;width:76px;height:76px;flex:none;border-radius:50%;background:#fff;color:var(--red);display:flex;align-items:center;justify-content:center;padding-left:5px;box-shadow:0 0 0 10px rgba(255,255,255,.18),0 18px 40px -10px rgba(0,0,0,.5)}
+.anchor{margin:14px 0 0;font-size:15.5px;color:var(--mute)}
+.anchor s{color:var(--mute)}
+.anchor b{color:var(--red);font-weight:700}
+.trust{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 30px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line);font-size:14px;color:var(--mute)}
+.trust b{color:var(--ink);font-weight:600;margin-right:4px}
+.btn.big{font-size:22px;padding:20px 46px 17px}
+
+.btn{display:inline-block;border:0;cursor:pointer;background:linear-gradient(180deg,#a8283c,var(--red2));color:#fff;border-radius:14px;padding:18px 34px 16px;text-align:center;text-decoration:none;font:600 20px/1.2 Poppins;box-shadow:0 0 0 4px rgba(199,107,120,.25),0 14px 30px -10px rgba(111,20,36,.5);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.btn small{display:block;margin-top:6px;font:400 13px/1.3 Poppins;opacity:.9}
+.btn.wide{display:block;width:100%;max-width:520px;margin:0 auto}
+
+/* pain list */
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.quote-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;font-size:16.5px}
+.quote-card:before{content:"“";font-family:"Shippori Mincho",serif;color:var(--rose);font-size:34px;line-height:0;vertical-align:-14px;margin-right:4px}
+.turn{text-align:center;max-width:720px;margin:40px auto 0;font-size:19px}
+.turn b{color:var(--red)}
+
+/* story */
+.story{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center}
+.story-photo{border-radius:22px;overflow:hidden;aspect-ratio:4/5}
+.story-photo img{width:100%;height:100%;object-fit:cover}
+.story h2{font-size:clamp(26px,3vw,36px);margin:14px 0 18px}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:22px}
+.stats div b{display:block;font:700 26px/1.1 Poppins;color:var(--red)}
+.stats div span{font-size:13.5px;color:var(--mute)}
+
+/* stages */
+.stages{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stage{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.stage .n{font:600 12px/1 Poppins;letter-spacing:.14em;color:var(--rose);text-transform:uppercase}
+.stage h3{font-size:24px;margin:8px 0 4px}
+.stage .w{font-size:13px;color:var(--mute);margin-bottom:10px}
+.stage p{font-size:15px;margin:0}
+.blueprint{margin:36px auto 0;max-width:860px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 28px}
+.blueprint h3{font-size:22px;margin-bottom:12px}
+.blueprint ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px}
+.blueprint li{position:relative;padding-left:26px;font-size:15.5px}
+.blueprint li:before{content:"✓";position:absolute;left:0;color:var(--red);font-weight:700}
+
+/* value stack */
+.stack{max-width:880px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:12px 28px 32px;box-shadow:0 30px 60px -44px rgba(61,11,23,.5)}
+.item{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.item:last-of-type{border-bottom:0}
+.item .thumb{width:96px;height:96px;border-radius:14px;overflow:hidden;background:var(--rose-soft)}
+.item .thumb img{width:100%;height:100%;object-fit:cover}
+.item .thumb.icon{display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--rose-soft),var(--blush));border:1px solid var(--line)}
+.item .thumb.icon b{font:600 30px/1 "Shippori Mincho",serif;color:var(--red)}
+.item .thumb.icon span{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-top:4px}
+.item h3{font:600 17.5px/1.35 Poppins;letter-spacing:0;margin:0 0 6px}
+.item h3 .k{color:var(--red)}
+.item p{font-size:15px;color:var(--mute);margin:0}
+.item .val{display:inline-block;margin-top:8px;font-size:13.5px;font-weight:600;color:var(--ink);background:var(--blush);border-radius:20px;padding:3px 12px}
+.item .only{display:inline-block;margin-left:6px;font-size:12px;font-weight:600;color:#fff;background:var(--red);border-radius:20px;padding:3px 10px;letter-spacing:.04em}
+.price{text-align:center;padding-top:26px;border-top:2px dashed var(--line)}
+.price .tv{font:600 26px/1.2 Poppins;margin:0}
+.price .tv s{text-decoration-thickness:2px}
+.price .np{font:600 24px/1.2 Poppins;color:var(--rose);margin:6px 0}
+.price .np s{text-decoration-thickness:2px}
+.price .today{font:700 clamp(38px,6vw,56px)/1.1 Poppins;color:var(--red);margin:6px 0 22px;letter-spacing:-.02em}
+.price .fine{font-size:13.5px;color:var(--mute);margin-top:14px}
+.dates{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:520px;margin:20px auto 0}
+.dates div{background:var(--blush);border-radius:14px;padding:12px 8px}
+.dates span{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.dates b{display:block;font:600 18px/1.3 Poppins;color:var(--red);margin-top:2px}
+
+/* proof */
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.yt{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.yt p{font:500 19px/1.4 "Shippori Mincho",serif;letter-spacing:-.01em;margin:0 0 14px;color:var(--ink)}
+.yt span{font-size:13px;color:var(--red);font-weight:500}
+
+/* fit */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fit div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.fit h3{font-size:22px;margin-bottom:12px}
+.fit ul{margin:0;padding-left:20px}
+.fit li{margin-bottom:8px;font-size:15.5px}
+
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none;position:relative;padding-right:28px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:0;top:12px;font-size:22px;color:var(--red)}
+details[open] summary:after{content:"–"}
+details p{color:var(--mute);font-size:15.5px}
+
+.final{text-align:center}
+.final h2{font-size:clamp(28px,3.6vw,42px);max-width:760px;margin:0 auto 16px}
+.call{margin-top:22px;font-size:15px;color:var(--mute)}
+footer{padding:30px 20px 44px;text-align:center;font-size:13px;color:var(--mute)}
+
+@media (max-width:860px){
+  .story{grid-template-columns:1fr;gap:30px}
+  .story-photo{max-width:420px;margin:0 auto}
+  .stages{grid-template-columns:1fr 1fr}
+  .proof{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  section{padding:54px 0}
+  .vsl{border-radius:16px}
+  .vsl-copy{left:6%;max-width:46%}
+  .vsl-copy p{font-size:16px;margin-top:10px}
+  .vsl-label{font-size:9px;padding:6px 9px;letter-spacing:.12em}
+  .play{width:50px;height:50px;margin-top:12px;box-shadow:0 0 0 6px rgba(255,255,255,.18)}
+  .play svg{width:22px;height:22px}
+  .vsl-fg{width:62%}
+  .kicker span.long{display:none}
+  .btn.big{font-size:19px;padding:17px 20px 15px}
+  .trust{gap:8px 18px;font-size:13px}
+  .cols2,.fit,.stages,.blueprint ul{grid-template-columns:1fr}
+  .item{grid-template-columns:64px 1fr;gap:14px}
+  .item .thumb{width:64px;height:64px}
+  .stack{padding:6px 18px 26px}
+  .btn{padding:16px 22px 14px;font-size:18px;width:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="bar"><b>The program starts Saturday 21 November.</b> Doors close Wednesday 18 November.</div>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <p class="kicker"><span class="long">From Survival to Softness™ <i>·</i> </span>8-week program <i>·</i> Starts Saturday 21 November</p>
+    <h1>Stop Living In Survival Mode: The 4-Stage Method That Helps You <em>Switch Off</em>, Put Yourself First &amp; Feel Soft And Feminine In Just 8 Weeks</h1>
+    <p class="lead">…without giving up your ambition, your goals or the people who count on you.</p>
+
+    <!-- VSL slot: replace .vsl-poster with the 5-minute video embed when it's recorded (keep the 16:9 frame). -->
+    <div class="vsl" role="img" aria-label="Video from Urania, coming soon">
+      <img class="vsl-fg" src="img/host.jpg" alt="Urania Nelom in a white dress with white flowers">
+      <div class="vsl-copy">
+        <span class="vsl-label">Watch this first</span>
+        <p>A 5-minute message from Urania</p>
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+      </div>
+    </div>
+
+    <a class="btn big" href="#join">Yes, I'm ready to join<small>We start together on Saturday 21 November</small></a>
+    <p class="anchor">Normally <s>$997</s> · <b>yours today for $697</b></p>
+    <div class="trust">
+      <span><b>156K</b> YouTube community</span>
+      <span><b>1M+</b> views on my meditations</span>
+      <span><b>Since 2020</b> coaching women</span>
+    </div>
+  </div>
+</header>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Does this sound like you?</span></div>
+    <h2 class="sec-title">The hidden reason you can't switch off, even when everything is done</h2>
+    <p class="sec-sub">Survival mode doesn't look like chaos. It looks like a woman who is on top of everything. Maybe you've said some of these:</p>
+    <div class="cols2 narrow" style="max-width:900px">
+      <div class="quote-card">I have so much on my mind, and I struggle to switch off.</div>
+      <div class="quote-card">I feel guilty when I'm resting or not being productive.</div>
+      <div class="quote-card">I know I need more time for myself, but there's always something else to do.</div>
+      <div class="quote-card">I'm constantly thinking about what needs to happen next.</div>
+      <div class="quote-card">I'm good at taking care of my responsibilities, but I struggle to put myself first.</div>
+      <div class="quote-card">I want to feel connected to myself again, and know what I actually want.</div>
+    </div>
+    <p class="turn">You don't need to become better at doing everything. <b>You need a life that has room for you.</b> That's exactly what we build together in these 8 weeks.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap story">
+    <div class="story-photo"><img src="img/soft.jpg" alt="Urania Nelom smiling, resting her chin on her hand"></div>
+    <div>
+      <span class="eyebrow">Hi, I'm Urania</span>
+      <h2>I looked like I had everything under control, and inside I never felt safe to rest</h2>
+      <p>When I was five, my father left our family, and as a little girl I stepped into survival. People always said, "Oh, Urania, she has everything under control," but inside there was always this rush in my body, and I thought that was normal.</p>
+      <p>Then came the burnout. What finally changed my life was learning to feel safe in my own body first, and building a life with room for me in it. Today I teach this to 156,000 women on YouTube, I coach women in my program, and I still fly as a flight attendant, so I know what a full week feels like.</p>
+      <div class="stats">
+        <div><b>156K</b><span>women in my YouTube community</span></div>
+        <div><b>1M+</b><span>views on my meditations</span></div>
+        <div><b>2020</b><span>coaching women since</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">The program</span></div>
+    <h2 class="sec-title">The 4 stages that take you from survival to softness</h2>
+    <p class="sec-sub">Two modules for each stage. The lessons give you the foundation, and the live sessions help you put it into your real life.</p>
+    <div class="stages">
+      <div class="stage"><div class="n">Stage 1</div><h3>Reconnect</h3><div class="w">Modules 1–2</div><p>Come back into your body. Breathwork, emotional awareness, EFT tapping and your Soft Morning Routine.</p></div>
+      <div class="stage"><div class="n">Stage 2</div><h3>Create</h3><div class="w">Modules 3–4</div><p>Make space for yourself. The Soft Planning Method, a realistic weekly schedule and boundaries you can actually say out loud.</p></div>
+      <div class="stage"><div class="n">Stage 3</div><h3>Nourish</h3><div class="w">Modules 5–6</div><p>Put your needs back on the list. Pleasure, rest, real me-time and an evening routine that helps you unwind.</p></div>
+      <div class="stage"><div class="n">Stage 4</div><h3>Embody</h3><div class="w">Modules 7–8</div><p>Make softness your normal. Habits without pressure, your Soft Sunday Reset and a plan for busy weeks.</p></div>
+    </div>
+    <div class="blueprint">
+      <h3>You finish with your own Soft Life Blueprint</h3>
+      <ul>
+        <li>Your Soft Morning Routine</li>
+        <li>Your emotional self-connection practices</li>
+        <li>Your Soft Weekly Structure</li>
+        <li>Your personal boundaries</li>
+        <li>Your me-time and pleasure practices</li>
+        <li>Your feminine wellness practices</li>
+        <li>Your Soft Sunday Reset</li>
+        <li>Your plan for busy, demanding weeks</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Everything you get</span></div>
+    <h2 class="sec-title">Here's everything inside From Survival to Softness™</h2>
+    <p class="sec-sub">Normally $997. Today you join for $697.</p>
+
+    <div class="stack">
+      <div class="item">
+        <div class="thumb"><img src="img/host.jpg" alt=""></div>
+        <div><h3><span class="k">THE PROGRAM:</span> From Survival to Softness™, the 8-week program</h3><p>8 modules across the 4 stages, 6 live group coaching sessions with me, and your personal Soft Life Blueprint. Every session is recorded, so you never fall behind.</p><span class="val">$2,997 value</span></div>
+      </div>
+      <div class="item">
+        <div class="thumb"><img src="img/white.jpg" alt=""></div>
+        <div><h3><span class="k">BONUS #1:</span> A 45-minute 1:1 session with me</h3><p>Just you and me. We look at where you are right now, what keeps you on hard mode and how to shape your Soft Life Blueprint around your real life.</p><span class="val">$397 value</span></div>
+      </div>
+      <div class="item">
+        <div class="thumb"><img src="img/flight.jpg" alt=""></div>
+        <div><h3><span class="k">BONUS #2:</span> Pocket Urania <span class="only">First 7 women only</span></h3><p>8 weeks of voice-note access to me between the live sessions. When something comes up on a Tuesday, you don't have to wait for the next call.</p><span class="val">$1,500 value</span></div>
+      </div>
+      <div class="item">
+        <div class="thumb"><img src="img/soft.jpg" alt=""></div>
+        <div><h3><span class="k">BONUS #3:</span> The Soft Life Audio Library</h3><p>New feminine energy affirmations for each stage, morning and evening, plus 4 guided hypnosis sessions to listen to before sleep. My guided meditations have over 1 million views on YouTube, and these are made only for this program.</p><span class="val">$497 value</span></div>
+      </div>
+      <div class="item">
+        <div class="thumb"><img src="img/tweed.jpg" alt=""></div>
+        <div><h3><span class="k">BONUS #4:</span> Soft &amp; Magnetic: feminine energy in dating</h3><p>How to stop chasing, set standards without being hard, and let yourself receive. For the woman who is single, dating or wants more softness in her relationship.</p><span class="val">$297 value</span></div>
+      </div>
+      <div class="item">
+        <div class="thumb"><img src="img/autumn.jpg" alt=""></div>
+        <div><h3><span class="k">BONUS #5:</span> Your Soft New Year</h3><p>A guided reflection on the year you just had, and my live Feminine Goal Setting Workshop, so you start 2027 with goals that feel good, not just look good.</p><span class="val">$297 value</span></div>
+      </div>
+      <div class="item">
+        <div class="thumb"><img src="img/calendar-crop.jpg" alt="Urania's colour-coded Google Calendar"></div>
+        <div><h3><span class="k">BONUS #6:</span> The Soft Calendar Method</h3><p>I show you my own Google Calendar and how I plan my week with soft structure: deep work, walks, me-time and rest, all with room to breathe.</p><span class="val">$47 value</span></div>
+      </div>
+      <div class="item">
+        <div class="thumb icon" aria-hidden="true"><b>10</b><span>min</span></div>
+        <div><h3><span class="k">BONUS #7:</span> The Hard Week Protocol</h3><p>The 10-minute version of every routine, for the weeks when life gets loud, so one busy week never undoes everything you built.</p><span class="val">$97 value</span></div>
+      </div>
+      <div class="item">
+        <div class="thumb icon" aria-hidden="true"><b>56</b><span>prompts</span></div>
+        <div><h3><span class="k">BONUS #8:</span> The Soft Life Journal</h3><p>56 prompts, one for every day of the 8 weeks, following the 4 stages.</p><span class="val">$47 value</span></div>
+      </div>
+      <div class="item">
+        <div class="thumb icon" aria-hidden="true"><b>∞</b><span>access</span></div>
+        <div><h3><span class="k">INCLUDED:</span> The Soft Circle + lifetime access</h3><p>A private group with the other women in the program, and every lesson and recording for life.</p></div>
+      </div>
+
+      <div class="price">
+        <p class="tv">Total value <s>$6,176</s></p>
+        <p class="np">Normal price: <s>$997</s></p>
+        <p class="today">Today only $697</p>
+        <a class="btn wide" href="#checkout">Yes, I'm ready to join<small>One payment of $697 · secure checkout</small></a>
+        <p class="fine">Pocket Urania goes to the first 7 women who join.</p>
+        <div class="dates">
+          <div><span>Doors close</span><b>Wed 18 Nov</b></div>
+          <div><span>We start</span><b>Sat 21 Nov</b></div>
+          <div><span>Program ends</span><b>Sat 16 Jan</b></div>
+        </div>
+        <p class="fine">After you join, you get a welcome email with everything you need, and we begin together on Saturday 21 November.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">From my community</span></div>
+    <h2 class="sec-title">What women in my community are saying</h2>
+    <div class="proof">
+      <div class="yt"><p>"Your videos are so beneficial to helping me get out of survival mode and truly helping me embrace softness."</p><span>— A woman in my community</span></div>
+      <div class="yt"><p>"Wow you just literally spoke to my everyday. Being a mother, a business woman, I never switch off. I hardly sleep."</p><span>— A woman in my community</span></div>
+      <div class="yt"><p>"You are absolutely spot on! I am a combination of all of them. I'm learning to be different and set boundaries and reparent myself."</p><span>— A woman in my community</span></div>
+      <div class="yt"><p>"At 55 I begin to live in balance… love you Urania and all the women in this community."</p><span>— A woman in my community</span></div>
+      <div class="yt"><p>"I'm so happy to be healed and in my feminine. I make a quiet decision every day to stay soft and gentle."</p><span>— A woman in my community</span></div>
+      <div class="yt"><p>"Thank you so much Urania. You have been such a light on my journey."</p><span>— A woman in my community</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="narrow" style="max-width:960px">
+    <div class="fit">
+      <div><h3>This is for you if…</h3><ul>
+        <li>You're the one who holds everything together, and you're tired of it costing you yourself.</li>
+        <li>You feel guilty when you rest.</li>
+        <li>You want to keep your ambition, just without the constant rush.</li>
+        <li>You want practical tools, not only inspiration.</li>
+        <li>You're ready to give yourself 8 weeks.</li>
+      </ul></div>
+      <div><h3>This isn't for you if…</h3><ul>
+        <li>You want someone to tell you to do less and drop your goals.</li>
+        <li>You're looking for a quick fix you watch once and forget.</li>
+        <li>You're not willing to make space for yourself, even a little.</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="narrow">
+    <div class="center"><span class="eyebrow">Questions</span></div>
+    <h2 class="sec-title">Frequently asked questions</h2>
+    <details open><summary>When does it start, and how long does it take?</summary><p>The program starts on Saturday 21 November, not on the day you join, and runs for 8 weeks until Saturday 16 January. After you join you get a welcome email with everything you need before we start. Each week you get the lessons for that stage, and we meet live 6 times. Plan for about 1 to 2 hours a week.</p></details>
+    <details><summary>What if I can't make a live session?</summary><p>Every session is recorded and you keep lifetime access, so you can watch it when it suits you. You can also send me your question beforehand.</p></details>
+    <details><summary>Is this group coaching or private coaching?</summary><p>Both. The live sessions are with a small group of women, and every woman who joins also gets a 45-minute 1:1 session with me. The first 7 women also get Pocket Urania, my voice-note support between sessions.</p></details>
+    <details><summary>I'm already so busy. How will I find the time?</summary><p>That's exactly who this program is for. Nothing here asks you to add more to your plate. We start by making space, and the Hard Week Protocol gives you a 10-minute version of everything for the weeks when life gets loud.</p></details>
+    <details><summary>What if I don't have the budget right now?</summary><p>I understand. I spent years trying to fix my exhaustion with one self-care routine after another, and nothing changed until I learned to feel safe in my own body. Today the program is $697 instead of $997, and that price is only for this round.</p></details>
+    <details><summary>I already watch your videos. Why join the program?</summary><p>Videos give you ideas, and the program gives you your own plan. Inside, you build your personal Soft Life Blueprint step by step, you get live coaching, a 1:1 session with me and support between sessions, so it doesn't stay a nice idea you forget by Monday.</p></details>
+    <details><summary>Is this only about feminine energy?</summary><p>No. Feminine energy is part of it, but this is also very practical: your morning, your week, your boundaries and your calendar. The inner work helps you know what you need, and the practical work makes room for it.</p></details>
+    <details><summary>I'm not sure it's right for me. Can I talk to you first?</summary><p>Yes. Book a free call with me below and we'll see together whether it fits.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow">Doors close Wednesday 18 November</span>
+    <h2 style="margin-top:14px">You were never meant to do life on hard mode</h2>
+    <p class="sec-sub" style="margin-bottom:28px">Join From Survival to Softness™ today for $697, and let's build a life that has room for you.</p>
+    <a class="btn" href="#checkout">Yes, I'm ready to join<small>Today $697 · normally $997</small></a>
+    <p class="call">Not sure it's for you? <a href="https://calendly.com/coachurania/survial-to-softness-clarity-call">Book a free call with me</a></p>
+  </div>
+</section>
+
+<footer>© 2026 Urania Nelom · From Survival to Softness™</footer>
+</body>
+</html>
