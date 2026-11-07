@@ -48,7 +48,10 @@ p{margin:0 0 14px}
 .hero h1{font-family:"Shippori Mincho",Georgia,serif;font-weight:500;font-size:clamp(30px,4.3vw,52px);line-height:1.12;letter-spacing:-.035em;margin:0 auto 16px;max-width:960px}
 .hero h1 em{font-style:normal;color:var(--red)}
 .lead{font:300 clamp(17px,1.6vw,20px)/1.5 Poppins;letter-spacing:.02em;color:var(--mute);max-width:680px;margin:0 auto 22px}
-.lead .nw{white-space:nowrap}
+@media(min-width:700px){.lead .bm{display:none}}
+@media(max-width:699px){.lead .bd{display:none}}
+@media(max-width:414px){.lead{font-size:16px;letter-spacing:.01em}}
+@media(max-width:370px){.lead{font-size:15px;letter-spacing:0}}
 .proof{font:600 14px/1.4 Poppins;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin:0 0 8px}
 .hq{font:italic 400 16px/1.5 Poppins;color:var(--ink,#2a1a1d);margin:0 auto 28px}
 .hq.after{margin-top:30px}
@@ -254,7 +257,7 @@ footer .legal{font-size:11.5px;line-height:1.6;opacity:.85}
   <div class="wrap hero-in">
     <div class="stars"><span class="st">★★★★★</span><span class="sx">Trusted By 156K+ Women</span></div>
     <h1>How To Finally Switch Off, Get Your Spark Back &amp; Feel <em>Soft And Feminine</em> Again...</h1>
-    <p class="lead">From Survival to Softness™ is the 4&#8209;phase method women use <span class="nw">to go</span> <span class="nw">from drained to “full”,</span> so they can <span class="nw">rest without guilt</span> and <span class="nw">put themselves first,</span> without giving up their goals or the people who <span class="nw">count on them.</span></p>
+    <p class="lead">From Survival to Softness™ is the<br class="bm"> 4&#8209;phase method<br class="bd"> women use to go from<br class="bm"> drained to “full”, so they can rest<br> without guilt and put themselves first,<br class="bm"> without giving up<br class="bd"> their goals<br class="bm"> or the people who count on them.</p>
     <div class="vsl">
       <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/ej17sh4hl5.js" async type="module"></script>
       <style>wistia-player[media-id='ej17sh4hl5']:not(:defined){background:center / contain no-repeat url('https://fast.wistia.com/embed/medias/ej17sh4hl5/swatch');display:block;filter:blur(5px);padding-top:56.25%}.vsl wistia-player{position:absolute;inset:0;width:100%;height:100%}</style>
